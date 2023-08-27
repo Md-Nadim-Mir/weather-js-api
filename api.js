@@ -76,7 +76,8 @@ weatherApi = (() => {
                 
                 
                 `
-
+           
+                input_field.value='';
                
             })
 
