@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!--  favicon added -->
+
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+
+    <!-- Tailwind and DasiUI script add -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--body design -->
+
+    <style>
+
+          body{
+              
+            background-image: url(./image/bg.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            height: 800px;
+
+          }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+       <!-- header section -->
+
+       <h1 class="text-xl md:text-4xl text-[white] text-center font-bold    pt-10 lg:pt-20">Know about today Weather Forecast !!!!</h1>
+
+       <!-- header section end -->
+
+
+       <!-- main section -->
+
+       <main class="max-w-screen-xl mx-auto  md:px-16 lg:px-24 mt-10 ">
+
+
+           <!-- search button and input field -->
+
+           <div class=" md:px-5 text-center pt-5">
+
+
+                   <input id="input-field" type="text" placeholder="Enter the city name" value="dhaka"  class="text-center outline-none border-none w-1/2 p-3 text-black font-bold rounded-lg ">
+
+                   <button id="search-btn" class="btn btn-primary rounded-lg">
+                            Search
+                   </button>
+
+           </div>
+
+
+           <!-- Result show here -->
+
+           <div id="result" class="text-center items-center justify-center bg-[#707d1b] mx-2 md:mx-32 mt-10 rounded-xl pb-5">
+
+                   
+
+           </div>
+
+
+       </main>
+
+
+       <!-- main section end -->
+
+
+
+    <!-- script added -->
+    <script src="api.js"></script>
+    <script src="key.js"></script>
+
+</body>
+
+</html>
